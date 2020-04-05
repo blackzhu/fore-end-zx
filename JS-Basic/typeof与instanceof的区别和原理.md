@@ -1,0 +1,29 @@
+ typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的
+# type
+typeof(a)一般只能返回'string','number','boolean','symbol','undefined','object','function'7种类型，他的缺陷在于判断引用类型的时候，只能判断出object
+和function类型，其余的引用类型返回的都是object。  
+判断一个数的存在最好用if(typrof(a) != 'undefined')
+#instanceof
+a（对象） instanceof b（构造函数） 检测a是否在b的原型链上，既a._propto_的原型链上是否包含了b.proptotype,是就返回true不是返回false。  
+用途：  
+ 1）判断a是不是b的实例；
+ 2）在继承关系中用来判断一个实例是否属于它的父类型。  
+ ```javasctipt
+ function Foo(){} 
+ Foo.prototype = new Aoo();//JavaScript 原型继承 
+ var foo = new Foo(); 
+ console.log(foo instanceof Foo)//true 
+ console.log(foo instanceof Aoo)//true
+ ```
+自己手写一个instanceof2：  
+```javascript
+function instanceof2 (L,R) {
+  let o = R.proptotype;
+  L = L._proto_ ;
+  while (true) {
+    if (L === o) return true;
+    if (L === null) return false;
+    L = L._proto;
+  }
+}
+```
