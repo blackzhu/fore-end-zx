@@ -15,3 +15,5 @@
 [在浏览器输入URL回车之后发生了什么](https://www.cnblogs.com/aiqiqi/p/11479185.html)
 
 [TCP-三次握手和四次挥手简单理解](https://www.jianshu.com/p/d3725391af59)
+
+[面试官，不要再问我三次握手和四次挥手](https://zhuanlan.zhihu.com/p/86426969)
