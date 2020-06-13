@@ -1,6 +1,8 @@
 # HTTP
 [建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系](https://juejin.im/post/5e76bd516fb9a07cce750746)
 
+[浏览器灵魂之问](https://juejin.im/post/5df5bcea6fb9a016091def69#heading-8)
+
 ### 001. HTTP 报文结构是怎样的？
 起始行 + 头部 + 空行 + 实体
 ### 002. 如何理解 HTTP 的请求方法？
